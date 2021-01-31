@@ -68,10 +68,6 @@ $(function() {
 				comment:$("#updateComment").val()
 		};
 		
-		
-		console.log(param.tid);
-		console.log(param.comment);
-		
 		$.ajax({
 			
 			type:'post',
@@ -82,7 +78,6 @@ $(function() {
 		
 			success:function(data){
 					
-				console.log( data );
 				$("#btn").trigger('click');
 			},
 			error:function(request, status, error){

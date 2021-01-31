@@ -52,14 +52,10 @@ public class TimeUpdate extends HttpServlet {
 		
 		String tid = (String) jsonObject.get("tid");
 		String comment = (String) jsonObject.get("comment");
-		System.out.println( comment );
 		
 		String url = "https://barosa.me:6611/timeline/"+tid; 	//URL
 		HashMap<String, String> param = new HashMap<String, String>();
 		param.put("comment", comment );	//PARAM
-		
-		
-		
 		
 		String resp = postRequest(url, param);
 		
