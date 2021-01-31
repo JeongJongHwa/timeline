@@ -1,0 +1,7 @@
+CREATE TABLE TIMELINE (
+
+	TID int(11) primary key,  
+	COMMENT VARCHAR(200),	 
+	REGDATE DATETIME
+
+);
